@@ -1,7 +1,7 @@
 CalCalych
 =========
 
-Simple calories calculator, powered by Mithril.
+![Icon](static/favicon.png) Simple calories calculator, powered by Mithril.
 
 
 Installation
