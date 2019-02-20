@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+js/products.js
+static
+!static/favicon.png
+.cache
+*.py[cod]

@@ -1,0 +1,22 @@
+{
+  "name": "CalCalych",
+  "version": "1.0.0",
+  "description": "Simple Calories Calculator",
+  "main": "calc.js",
+  "scripts": {
+    "gzip:js": "cd static && gzip -kf9 *.js *.map",
+    "build:js": "parcel build js/calc.js --no-minify --target browser --out-dir static && npm run gzip:js",
+    "build:prod:js": "parcel build js/calc.js --target browser --out-dir static && npm run gzip:js",
+    "watch:js": "onchange 'js/*.js' -- npm run build:js",
+    "watch": "npm run watch:js"
+  },
+  "author": "Alexander Travov",
+  "license": "ISC",
+  "dependencies": {
+    "mithril": "^1.1.6"
+  },
+  "devDependencies": {
+    "onchange": "^4.1.0",
+    "parcel-bundler": "^1.9.7"
+  }
+}
